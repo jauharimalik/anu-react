@@ -14,13 +14,19 @@ Aplikasi Manajemen Pengguna adalah sebuah aplikasi sederhana yang memungkinkan A
 
 ## Penggunaan
 
-Untuk menggunakan aplikasi ini, ikuti langkah-langkah berikut:
+### Demo Aplikasi
+Anda dapat mencoba aplikasi ini melalui link demo di [sini](https://jauharimalik.github.io/anu-react/).
+
+### Menjalankan Aplikasi di Komputer Lokal
+Untuk menjalankan aplikasi ini di komputer lokal Anda, ikuti langkah-langkah berikut:
 
 1. Clone repositori ini ke dalam komputer Anda.
 2. Buka terminal dan navigasikan ke direktori tempat Anda menyimpan repositori ini.
 3. Jalankan perintah `npm install` untuk menginstal semua dependensi yang diperlukan.
 4. Jalankan perintah `npm start` untuk memulai aplikasi.
 5. Buka browser Anda dan akses `http://localhost:3000` untuk melihat aplikasi.
+
+Pastikan Anda memiliki Node.js dan npm terinstal di komputer Anda sebelum menjalankan langkah-langkah di atas.
 
 ## Instalasi
 
