@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Aplikasi Manajemen Pengguna
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi Manajemen Pengguna adalah sebuah aplikasi sederhana yang memungkinkan Anda untuk mendaftarkan pengguna baru dan melihat daftar pengguna yang sudah terdaftar. Aplikasi ini dibangun dengan menggunakan React.js dan Redux untuk manajemen state.
 
-## Available Scripts
+## Daftar Isi
+- [Penggunaan](#penggunaan)
+- [Instalasi](#instalasi)
+- [Konfigurasi](#konfigurasi)
+- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
+- [Penjelasan Singkat](#penjelasan-singkat)
+- [Dokumentasi Teknis](#dokumentasi-teknis)
+- [Kontribusi](#kontribusi)
+- [Lisensi](#lisensi)
 
-In the project directory, you can run:
+## Penggunaan
 
-### `npm start`
+Untuk menggunakan aplikasi ini, ikuti langkah-langkah berikut:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone repositori ini ke dalam komputer Anda.
+2. Buka terminal dan navigasikan ke direktori tempat Anda menyimpan repositori ini.
+3. Jalankan perintah `npm install` untuk menginstal semua dependensi yang diperlukan.
+4. Jalankan perintah `npm start` untuk memulai aplikasi.
+5. Buka browser Anda dan akses `http://localhost:3000` untuk melihat aplikasi.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalasi
 
-### `npm test`
+Jika Anda ingin menginstal aplikasi ini di server atau lingkungan produksi, ikuti langkah-langkah berikut:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone repositori ini ke server Anda.
+2. Buka terminal di server dan navigasikan ke direktori tempat Anda menyimpan repositori ini.
+3. Jalankan perintah `npm install` untuk menginstal semua dependensi yang diperlukan.
+4. Konfigurasi server dan database yang diperlukan.
+5. Jalankan aplikasi dengan bantuan server Node.js atau menggunakan server web seperti Nginx atau Apache.
 
-### `npm run build`
+## Konfigurasi
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Anda dapat mengkonfigurasi beberapa pengaturan dasar aplikasi ini melalui berkas-berkas berikut:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **store.js**: Anda dapat mengubah penyimpanan data, seperti mengganti penyimpanan ke database eksternal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Teknologi yang Digunakan
 
-### `npm run eject`
+Aplikasi ini dibangun dengan menggunakan teknologi-teknologi berikut:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React.js
+- Redux
+- React Router
+- Bcrypt.js
+- React-Datepicker
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Penjelasan Singkat
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Aplikasi ini memungkinkan Anda untuk:
+- Mendaftarkan pengguna baru dengan informasi seperti nama, email, nomor WhatsApp, tingkat akun, peran, status, kata sandi, dan tanggal efektif.
+- Melihat daftar pengguna yang sudah terdaftar dengan rincian seperti ID Pengguna, Nama Pengguna, Email, Nomor WhatsApp, Tingkat Akun, Peran, Status, Kata Sandi Terenkripsi, Tanggal Pendaftaran, dan Tanggal Efektif.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Dokumentasi Teknis
 
-## Learn More
+### Struktur Aplikasi
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Aplikasi ini terdiri dari beberapa komponen utama:
+- **App.js**: Komponen utama yang menentukan rute aplikasi dan menyediakan penyedia Redux.
+- **Navbar.js**: Komponen navigasi untuk mengakses halaman Pendaftaran dan Daftar Pengguna.
+- **Regis.js**: Komponen untuk mendaftarkan pengguna baru dengan validasi dan pengamanan kata sandi.
+- **List.js**: Komponen untuk menampilkan daftar pengguna yang sudah terdaftar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Penyimpanan Data
 
-### Code Splitting
+Data pengguna disimpan dalam Redux Store dan juga di-cache di Local Storage untuk mempertahankan data saat penyegaran halaman.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Validasi Data
 
-### Analyzing the Bundle Size
+Aplikasi ini memiliki validasi data yang ketat untuk memastikan semua informasi yang dimasukkan oleh pengguna adalah benar dan aman.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Kontribusi
 
-### Making a Progressive Web App
+Anda dapat berkontribusi pada pengembangan aplikasi ini dengan mengirimkan pull request atau melaporkan masalah (issues) melalui GitHub.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Lisensi
 
-### Advanced Configuration
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat berkas [LICENSE.md](LICENSE.md) untuk detailnya.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Terima kasih telah menggunakan Aplikasi Manajemen Pengguna!
