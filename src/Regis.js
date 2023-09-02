@@ -25,7 +25,6 @@ const RegisterForm = () => {
   const [error, setError] = useState("");
   const [effectiveDate, setEffectiveDate] = useState(null);
   const dispatch = useDispatch();
-  const users = useSelector((state) => state.user.users);
   const navigate = useNavigate();
 
   const handleRoleChange = (e) => {

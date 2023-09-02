@@ -59,7 +59,7 @@ const kolom = [
                       <td
                         key={index}
                         className={`border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left font-bold ${
-                          td === "Status" ? (user[td] ? "text-green-500" : "text-red-500") : ""
+                          td == "Status" ? (user[td] ? "text-green-500" : "text-red-500") : ""
                         }`}
                       >
                         {td == "status" ? (user[td] ? "Aktif" : "Tidak Aktif") : user[td]}
