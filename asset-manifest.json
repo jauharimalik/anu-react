@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/anu-react/static/css/main.360c2f2e.css",
+    "main.js": "/anu-react/static/js/main.e2cc0bf1.js",
+    "static/js/787.e67182e4.chunk.js": "/anu-react/static/js/787.e67182e4.chunk.js",
+    "index.html": "/anu-react/index.html",
+    "main.360c2f2e.css.map": "/anu-react/static/css/main.360c2f2e.css.map",
+    "main.e2cc0bf1.js.map": "/anu-react/static/js/main.e2cc0bf1.js.map",
+    "787.e67182e4.chunk.js.map": "/anu-react/static/js/787.e67182e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.360c2f2e.css",
+    "static/js/main.e2cc0bf1.js"
+  ]
+}
